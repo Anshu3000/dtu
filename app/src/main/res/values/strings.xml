@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Collegeapp</string>
+    <string name="note">update notice</string>
+    <string name="gallery">update gallery</string>
+    <string name="ebookimg">upload ebook</string>
+    <string name="group1">update group</string>
+    <string name="deletenot">delete notice</string>
+    <string name="addphoto">add photo</string>
+    <string name="addtile">add title</string>
+    <string name="upload">Upload</string>
+</resources>
