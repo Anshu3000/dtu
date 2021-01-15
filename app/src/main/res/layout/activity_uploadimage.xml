@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uploadimage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:elevation="@dimen/cardview_compat_inset_shadow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/addimage1"
+                    android:background="@drawable/color_yellow"
+                    android:src="@drawable/ic_image"
+                    android:padding="10dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/black"
+                    android:layout_height="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/addgalleryim"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+         <Spinner
+             android:id="@+id/category1"
+             android:layout_width="match_parent"
+             android:padding="10dp"
+             android:spinnerMode="dropdown"
+             android:background="@android:drawable/btn_dropdown"
+              android:textAlignment="center"
+             android:layout_margin="10dp"
+             android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/uplodimage"
+            android:textAlignment="center"
+            android:text="@string/upload"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="390dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/imagepreview"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+</ScrollView>

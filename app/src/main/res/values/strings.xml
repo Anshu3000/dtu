@@ -8,4 +8,15 @@
     <string name="addphoto">add photo</string>
     <string name="addtile">add title</string>
     <string name="upload">Upload</string>
+    <string name="addgalleryim">gallery image</string>
+    <string name="addpdf">add pdf</string>
+    <string name="addpdftitle">add pdf title</string>
+
+    <string-array name="category1">
+        <item>Select category</item>
+        <item>Convocation</item>
+        <item>Independence day</item>
+        <item>Other events</item>
+    </string-array>
+
 </resources>
