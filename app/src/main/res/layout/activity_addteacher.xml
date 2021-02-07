@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    tools:context=".faculty.Addteacher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+         android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularimage1"
+            android:src="@drawable/elonmusk"
+            android:layout_marginTop="36dp"
+            android:layout_width="150dp"
+             app:civ_circle_color="#3f51b5"
+            app:civ_border="true"
+            app:civ_shadow_radius="10dp"
+            app:civ_border_color="@android:color/black"
+            app:civ_shadow_color="@color/green"
+            app:civ_border_width="5dp"
+            android:layout_height="150dp"/>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_marginTop="20dp"
+             app:errorEnabled="true"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_height="match_parent">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:id="@+id/teahername1"
+                 android:textSize="18sp"
+                  android:hint="@string/text12"
+                 android:layout_height="match_parent"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:textSize="18sp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email1"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/cateteacher"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upladteacher"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:text="@string/upload"
+            android:textSize="18sp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</ScrollView>

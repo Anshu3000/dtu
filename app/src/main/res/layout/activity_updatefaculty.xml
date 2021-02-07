@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty.Updatefaculty">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/openTeacher"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+
+        android:background="@drawable/color_pink"
+        android:src="@drawable/ic_add_black_24dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                 android:gravity="center"
+                android:text="@string/textcompu"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#F60D0E19"
+                android:layout_margin="5dp"
+                android:layout_height="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/csteacher"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/csnodatafound"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/no_data_found"/>
+
+            </LinearLayout>
+
+<!--        mechanical department     -->
+
+
+            <TextView
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+
+                android:text="@string/textmechanical"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#F60D0E19"
+                android:layout_margin="5dp"
+                android:layout_height="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mechteacher"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/mechnodatafound"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/no_data_found"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+
+                android:text="@string/textmate"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#F60D0E19"
+                android:layout_margin="5dp"
+                android:layout_height="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mathteacher"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/mathnodatafound"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/no_data_found"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+
+                android:text="@string/textelec"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#F60D0E19"
+                android:layout_margin="5dp"
+                android:layout_height="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/electeacher"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/electnodatafound"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/no_data_found"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="22sp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+
+                android:text="@string/textother"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#F60D0E19"
+                android:layout_margin="5dp"
+                android:layout_height="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/othteacher"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/ohternodatafound"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/no_data_found"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

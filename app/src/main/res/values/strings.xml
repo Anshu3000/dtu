@@ -11,12 +11,33 @@
     <string name="addgalleryim">gallery image</string>
     <string name="addpdf">add pdf</string>
     <string name="addpdftitle">add pdf title</string>
+    <string name="text12">enter teacher name....</string>
+    <string name="email1">enter a email...</string>
+    <string name="textupload1">"No Data Found "</string>
+    <string name="name">Name</string>
+    <string name="post">Teacher post</string>
+    <string name="teacheremail">Teacher email</string>
+    <string name="updatebutton">Update teacher</string>
+    <string name="textcompu">Computer science</string>
+    <string name="textmechanical">Mechanical depatment</string>
+    <string name="textmate">Mathematician</string>
+    <string name="textelec">Electrical engineering</string>
+    <string name="textother">Other</string>
 
     <string-array name="category1">
         <item>Select category</item>
         <item>Convocation</item>
         <item>Independence day</item>
         <item>Other events</item>
+    </string-array>
+
+    <string-array name="category12">
+        <item>Select category</item>
+        <item>Mechanical engineering</item>
+        <item>Computer science engineering</item>
+        <item>Mathematicians</item>
+        <item>Electrical engineering</item>
+        <item>Other</item>
     </string-array>
 
 </resources>

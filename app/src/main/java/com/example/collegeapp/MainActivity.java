@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.collegeapp.faculty.Updatefaculty;
+
 public class MainActivity extends AppCompatActivity {
-  ImageView i1 ,i2,i3;
+  ImageView i1 ,i2,i3,i4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
          i1=findViewById(R.id.noteimg);
          i2=findViewById(R.id.galleryimg);
          i3=findViewById(R.id.ebook);
+          i4=findViewById(R.id.groupimg);
          i1.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
@@ -37,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent x=new Intent(getApplicationContext(),Uploadpdf.class);
+                startActivity(x);
+            }
+        });
+
+        i4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent x=new Intent(getApplicationContext(), Updatefaculty.class);
                 startActivity(x);
             }
         });
